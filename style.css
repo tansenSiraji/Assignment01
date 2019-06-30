@@ -1,0 +1,157 @@
+
+body{
+  background-image: url("homeBack2.jpg");
+  background-color: lightblue;
+  background-size: cover;
+
+  height: 100%;
+  width: 100%
+}
+
+#h1{
+  align-content: center;
+  
+};
+
+.img {
+    border-block-color: black;
+    border-width: 2px;
+  }
+
+.inputUser{
+    align-content: center;
+  
+};
+
+
+#loc {
+  display: none;
+}
+
+#output{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 10;
+  width: 400px;
+}
+
+#presc{
+  display: none;
+  
+}
+
+#headTable, #gasTable, #diaTable{
+  width: 20%;
+  border: 1px solid black;
+  padding: 5px;
+  text-align: left;
+  background-color: white;
+  align-content: center;
+  display: none;
+
+}
+
+#cap, #cap1, #cap2{
+  font-weight: bold;
+  
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media (max-width: 575px) {
+  .section{
+    width: 90%;
+    font-size: 32px;
+  }
+  #gmap_canvas{
+    
+    height: 100px;
+    width:100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    right: 0;
+  }
+
+  .mapouter, .gmap_canvas{
+    width: 100px;
+    position: relative;
+    right: 0;
+  }
+}
+
+@media (max-width: 860px) and (min-width: 576px) {
+  .section {
+    width: 30%;
+    font-size: 24px;
+  }
+  #gmap_canvas{
+  
+    height: 200px;
+    width: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+    right: 0;
+  }
+
+  .mapouter, .gmap_canvas{
+    width: 200px;
+    position: relative;
+    right: 0;
+  }
+}
+
+
+
+@media screen and (max-width: 900px) {
+  ul.resnav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  ul.resnav li a {
+    float: left;
+    padding: 15px;
+  }
+  
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  ul.resnav li a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.contact{
+  background-color: white;
+}
+

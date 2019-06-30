@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class = 'section'>
+
+<div id = 'nav2'>    
+    <ul class="resNav">
+      <li><a href="home.html" >Home</a></li>
+      <li><a href="doctor.html" class="active">Find Doctor</a></li>
+      <li><a  href="about.html">About</a></li>
+    </ul>
+</div>
+
+<center><h1 id = 'h1'>Doctor Finding System</h1></center>
+
+<center><img src = 'logo1.jpeg' alt="docLogo" class="img"  height="150" width="150"></center>
+
+
+
+<center><div class = 'inputUser'>
+    <form id = 'input'>
+        Full Name:<br>
+        <input type="text" name="fullname" placeholder="Full Name" id = "name"><br>
+        <br>
+        Phone:<br>
+        <input type="text" name="phn" placeholder="Phone Number" id = 'number'><br>
+        <br>
+        <!--
+        Postal Code:<br>
+        <input type="text" name="code" placeholder="Postal Code">     
+        -->   
+      </form>
+
+      <br>
+    
+    <button id = 'submit' class="btn btn-success">SUBMIT</button><br>
+  
+  </div>
+</center>
+
+  
+
+    
+  <center>
+    <div id = 'loc'>
+      <h2 id = 'h2b'>Select Location:</h2>
+      <button id = 'bashBtn' class="btn btn-success">BASHUNDHARA</button>
+      <button id = 'gulBtn' class="btn btn-success">GULSHAN</button>
+      <button id = 'mirBtn' class="btn btn-success">MIRPUR</button>
+      <br>
+      <br>
+      <button id = 'backBtn' class = "btn btn-success">BACK</button>
+      
+      <style>
+      #loc{
+        display: none;
+      }
+      </style>
+    </div>
+
+    <div id = 'presc'>
+      <h2 id = 'h2c'>Click "SHOW PRESCRIPTION"</h2>
+      <button id = 'prescBtn' class="btn btn-success">SHOW PRESCRIPTION</button>
+    </div>
+  </center>
+
+
+
+
+  <div id = 'issue'>
+  <center>
+    <h2 id = 'h2a'>Type of Issue?</h2>
+        <button id = 'headBtn' class="btn btn-success" onclick="issue(event)">HEADACHE</button>
+        <button id = 'stomBtn' class="btn btn-success" onclick="issue(event)">GASTRIC</button>
+        <button id = 'diaBtn' class="btn btn-success" onclick="issue(event)">BACK PAIN</button>
+        <br>
+        <br>
+        <button id = 'confirmBtn' class = "btn btn-success" >CONFIRM</button>
+
+  </center>
+  <style>
+  #issue{
+    display : none;
+  }
+  </style>
+  </div>
+
+  <center>
+  <div id = 'table'>
+    <table id="headTable">
+      <caption id = 'cap'></caption>
+      <tr>
+        <th>Medicine</th>
+        <th>Quantity(Daily)</th> 
+      </tr>
+      <tr>
+        <td>Napa: </td>
+        <td>02</td>
+      </tr>
+      <tr>
+        <td>Ace Plus</td>
+        <td>01</td>
+      </tr>
+    </table>
+    <br>
+    
+    <table id="gasTable">
+        <caption id = 'cap1'></caption>
+        <tr>
+          <th>Medicine</th>
+          <th>Quantity(Daily)</th> 
+        </tr>
+        <tr>
+          <td>Gastric TabA: </td>
+          <td>02</td>
+        </tr>
+        <tr>
+          <td>Gastric TabB</td>
+          <td>01</td>
+        </tr>
+      </table>
+      <br>
+
+      <table id="diaTable">
+          <caption id = 'cap2'></caption>
+          <tr>
+            <th>Medicine</th>
+            <th>Quantity(Daily)</th> 
+          </tr>
+          <tr>
+            <td>Pain Killer A: </td>
+            <td>02</td>
+          </tr>
+          <tr>
+            <td>Pain Killer B</td>
+            <td>01</td>
+          </tr>
+        </table>
+        <br>
+  </div>
+
+</center>
+
+<!--BASHUNDHARA MAP-->
+<div class="mapouter" id = 'bashundhara'>
+  <div class="gmap_canvas">
+    <iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=
+    bashundhara%20Residential%20Area&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="10" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    <a href="https://www.embedgooglemap.net"></a>
+    <style>.mapouter{
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 400px;
+        border: 0px solid black;
+        };
+        .gmap_canvas {
+        
+        overflow:hidden;
+        background:none
+        !important;
+        height:400px;
+        width:400px;}</style>
+  </div>
+</div>
+
+<!--GULSHAN MAP-->
+<div class="mapouter" id = 'gulshan'>
+    <div class="gmap_canvas">
+      <iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=
+      gulshan&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="10" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      <a href="https://www.embedgooglemap.net"></a>
+      <style>.mapouter{
+          display: none;
+          position: fixed;
+          bottom: 0;
+          right: 0;
+          width: 400px;
+          border: 0px solid black;
+          };
+          .gmap_canvas {
+          
+          overflow:hidden;
+          background:none
+          !important;
+          height:400px;
+          width:400px;}</style>
+    </div>
+</div>
+  
+<!--MIRPUR MAP-->
+<div class="mapouter" id = 'mirpur'>
+    <div class="gmap_canvas">
+      <iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=MIRPUR&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="10" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      <a href="https://www.embedgooglemap.net"></a>
+      <style>.mapouter{
+          display: none;
+          position: fixed;
+          bottom: 0;
+          right: 0;
+          width: 400px;
+          border: 0px solid black;
+          };
+          .gmap_canvas {
+          
+          overflow:hidden;
+          background:none
+          !important;
+          height:400px;
+          width:400px;}</style>
+    </div>
+</div>
+  
+        
+<form>
+  <textarea type="text" name = "input" id = "output"></textarea>
+</form>  
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src = 'script.js'></script>
+
+</body>
+
+
+</html>
